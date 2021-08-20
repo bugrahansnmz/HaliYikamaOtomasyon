@@ -27,10 +27,6 @@ namespace HaliYikama
             {
                 btnGelirGider.Enabled = true;
             }
-            else if (lblCalisanTrueFalse.Text == "0")
-            {
-                btnGelirGider.Enabled = false;
-            }
             cbFiyatSec.SelectedItem = 3.5;
             cbFiyatSec.SelectedText = "3.5";
             ObjeEnabledFalse();
@@ -116,11 +112,7 @@ namespace HaliYikama
             }
             if (e.ColumnIndex== 1)
             {
-                if (tbMusteriAdi.Text != "" && tbMusteriSoyadi.Text != "" && tbTelefon.Text != "" && tbHaliAdet.Text != ""  && cbFiyatSec.SelectedIndex == -1)
-                {
-                    MessageBox.Show("Dikkat!");
-                }
-                else
+                if (tbMusteriAdi.Text != "" && tbMusteriSoyadi.Text != "" && tbTelefon.Text != "" && tbHaliAdet.Text != "" )
                 {
                     int b = Convert.ToInt32(grdMusteriListesi.CurrentRow.Cells[2].Value.ToString());
                     data = new DataBase();
@@ -140,6 +132,11 @@ namespace HaliYikama
                         ObjeEnabledTrue();
                         Listele();
                     }
+                 
+                }
+                else
+                {
+                    MessageBox.Show("Dikkat!");
                 }
 
             }
@@ -205,8 +202,7 @@ namespace HaliYikama
             cbFiyatSec.Enabled = false;
         }
         private void ObjeEnabledTrue()
-        {
-            dtpKayitTarihi.Enabled = true;
+        { 
             tbMusteriAdi.Enabled = true;
             tbMusteriSoyadi.Enabled = true;
             tbTelefon.Enabled = true;

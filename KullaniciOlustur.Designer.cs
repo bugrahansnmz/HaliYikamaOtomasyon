@@ -70,7 +70,7 @@ namespace HaliYikama
             // 
             // btnCalisanYenile
             // 
-            this.btnCalisanYenile.Location = new System.Drawing.Point(170, 244);
+            this.btnCalisanYenile.Location = new System.Drawing.Point(170, 200);
             this.btnCalisanYenile.Name = "btnCalisanYenile";
             this.btnCalisanYenile.Size = new System.Drawing.Size(125, 29);
             this.btnCalisanYenile.TabIndex = 24;
@@ -80,7 +80,7 @@ namespace HaliYikama
             // 
             // btnCalisanKaydol
             // 
-            this.btnCalisanKaydol.Location = new System.Drawing.Point(40, 244);
+            this.btnCalisanKaydol.Location = new System.Drawing.Point(40, 200);
             this.btnCalisanKaydol.Name = "btnCalisanKaydol";
             this.btnCalisanKaydol.Size = new System.Drawing.Size(125, 29);
             this.btnCalisanKaydol.TabIndex = 23;
@@ -124,18 +124,18 @@ namespace HaliYikama
             // cbCalisan
             // 
             this.cbCalisan.AutoSize = true;
-            this.cbCalisan.Location = new System.Drawing.Point(92, 183);
+            this.cbCalisan.Location = new System.Drawing.Point(184, 154);
             this.cbCalisan.Name = "cbCalisan";
-            this.cbCalisan.Size = new System.Drawing.Size(101, 24);
+            this.cbCalisan.Size = new System.Drawing.Size(87, 24);
             this.cbCalisan.TabIndex = 25;
-            this.cbCalisan.Text = "checkBox1";
+            this.cbCalisan.Text = "Yetki Ver";
             this.cbCalisan.UseVisualStyleBackColor = true;
             // 
             // KullaniciOlustur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 304);
+            this.ClientSize = new System.Drawing.Size(379, 272);
             this.Controls.Add(this.cbCalisan);
             this.Controls.Add(this.tbCalisanSifreTekrar);
             this.Controls.Add(this.label2);

@@ -145,32 +145,6 @@ namespace HaliYikama
             baglan.Close();
             return true;
         }
-        public bool CheckYoneticiKullanici2(int kadi)
-        {
-            SqlConnection baglan = Baglantı();
-            SqlCommand kmt = new SqlCommand("SELECT * FROM Calisan WHERE  calisan_tur = '" + kadi + "'", baglan);
-            SqlDataReader read = kmt.ExecuteReader();
-            if (read.HasRows)
-            {
-                baglan.Close();
-                return false;
-            }
-            baglan.Close();
-            return true;
-        }
-        public bool CheckGirenKullanici(int calisanTur)
-        {
-            SqlConnection baglan = Baglantı();
-            SqlCommand kmt = new SqlCommand("SELECT k_adi,k_sifre,calisan_tur FROM Calisan WHERE  calisan_tur ='" + calisanTur + "' ", baglan);
-            SqlDataReader read = kmt.ExecuteReader();
-            if (read.HasRows)
-            {
-                baglan.Close();
-                return true;
-            }
-            baglan.Close();
-            return false;
-        }
         public bool CheckCalisanKullanici2(string kadi, string ksifre, int calisanTur)
         {
             SqlConnection baglan = Baglantı();
@@ -183,16 +157,6 @@ namespace HaliYikama
             }
             baglan.Close();
             return true;
-        }
-        public DataTable KullaniciListele()
-        {
-            SqlConnection baglan = Baglantı();
-            SqlDataAdapter komut = new SqlDataAdapter("select * From Calisan", baglan);
-            DataSet dataSet = new DataSet();
-            komut.Fill(dataSet, "Calisan");
-            komut.Dispose();
-            baglan.Close();
-            return dataSet.Tables["Calisan"];
         }
     }
 }

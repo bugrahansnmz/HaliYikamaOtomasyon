@@ -30,7 +30,7 @@ namespace HaliYikama
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Müşteri_İşlem));
             this.btnListele = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -346,8 +346,8 @@ namespace HaliYikama
             // 
             // Sil
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
-            this.Sil.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            this.Sil.DefaultCellStyle = dataGridViewCellStyle1;
             this.Sil.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.Sil.HeaderText = "";
             this.Sil.MinimumWidth = 6;
@@ -664,9 +664,9 @@ namespace HaliYikama
             this.groupBox1.Controls.Add(this.cbBolge);
             this.groupBox1.Controls.Add(this.tbAciklama);
             this.groupBox1.Controls.Add(this.tbTelefon);
-            this.groupBox1.Location = new System.Drawing.Point(582, 12);
+            this.groupBox1.Location = new System.Drawing.Point(578, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(703, 269);
+            this.groupBox1.Size = new System.Drawing.Size(707, 269);
             this.groupBox1.TabIndex = 44;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kayıt Oluştur";
